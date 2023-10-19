@@ -1,0 +1,9 @@
+JDK--> JRE--> JVM
+
+class can have 5 access modifiers--> public , default, final, abstract, strictfp
+There can be only one public class in a source file and the file name must be class name.
+There can be many non public class in a source file and the file name can have any name if no public class.
+After compilation, .class file will be generated for each is class in the source file
+
+Object is created by JVM in Heap area
+JVM starts Garbage Collection to clear out objects which don't have reference variable attached to it
