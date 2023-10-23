@@ -7,3 +7,10 @@ After compilation, .class file will be generated for each is class in the source
 
 Object is created by JVM in Heap area
 JVM starts Garbage Collection to clear out objects which don't have reference variable attached to it
+
+String s1 =”Bishal”  ---> in scp(after checking if not present in scp)
+String s = new String(“Bishal”) ---> in Heap(definitely) as well as in scp(after checking if not present in scp)
+System.out.println(10+s1+15+s2); -->10Bishal15Bishal
+System.out.println(10+15+s1+s2); -->25BishalBishal
+System.out.println(s1+10*15+s2); -->Bishal150Bishal
+
