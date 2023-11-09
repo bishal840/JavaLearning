@@ -2,10 +2,9 @@ package CodingPrac;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 
-public class StartingIndiesOfSubstrings {
+public class StartingIndiesOfSubstrings_NotSuccess {
     /*
     Find the starting indices of the substrings in string (S) which is made by concatenating all words from a list(L)
 

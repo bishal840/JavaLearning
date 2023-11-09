@@ -2,7 +2,7 @@ JDK--> JRE--> JVM
 
 class can have 5 access modifiers--> public , default, final, abstract, strictfp
 There can be only one public class in a source file and the file name must be class name.
-There can be many non public class in a source file and the file name can have any name if no public class.
+There can be many non-public class in a source file and the file name can have any name if no public class.
 After compilation, .class file will be generated for each is class in the source file
 
 Object is created by JVM in Heap area
@@ -13,4 +13,56 @@ String s = new String(“Bishal”) ---> in Heap(definitely) as well as in scp(a
 System.out.println(10+s1+15+s2); -->10Bishal15Bishal
 System.out.println(10+15+s1+s2); -->25BishalBishal
 System.out.println(s1+10*15+s2); -->Bishal150Bishal
+
+
+
+If variable involved in arithmetic operations, data type will be--> max(int, dataType_Operand1, dataType_Operand2)
+byte b =100;
+b = b+10; -->error
+b = 100+ 10; --> no error
+
+int i =10;
+i=i++; --> increment not executed ==> because once the control goes to the left side, it will never go to the right side again
+System.out.println(i);-->10
+
+Can't access instance variable/methods from static area without the use of object even in same class
+Can access instance variable/methods from instance area without the use of object in same class
+Can access static variable/methods from instance area without the use of class name in same class
+Can access static variable/methods from static area without the use of class name in same class
+
+Can't access static variable/methods from static/instance area without the use of class name in different class
+Can't access instance variable/methods from static/instance area without the use of object in different class
+
+To create multi dimensional array : int[] arr = new int[2][3];
+To create multi dimensional array where inner arrays are of different length:
+ int[] arr = new int[2][];
+ arr[0]=new int[4];
+ arr[1]=new int[8];
+
+
+In Java, we can't import packages. We import class or interface
+To import a class in other package class--> import packageName.className
+If a class is not in any package, we can't import it in other packages' class
+If both classes are in same package, we don't need to import
+We cannot import classes with same name even from different packages
+If we import a class using packageName.*, the priority will be to current package class. But if imported with packageName.className, priority will be to that imported package class
+static import--> it imports only static methods/variables of a class--> import static packageName.className.*:
+
+It is not necessary that all the overloaded methods have same return type
+
+
+Can't change the method signature while overriding.
+while overriding, Access modifiers can be changed, but can't reduce the visibility
+while overriding, Return type can't be changed if the Return type is PRIMITIVE. for nonPRIMITIVE, Return type can be changed if return types are COVARIANT and the return type of Parent class method must be Parent to the return type of Child class method.
+Using Parent class reference if we store child class object, we can call only those methods which are present in parent class but since the object is of child class, child class method will be called. Example: WebDriver
+
+Polymorphic reference: obj of child class can be stored in parent class/interface refernce.
+
+For Abstract method, {} also not allowed
+It is not mandatory that an Abstract class must have abstract method. Practically, it is of no use.
+Can not create object of abstract class. Can use abstract class reference to hold child obj
+Two ways to access abstract class non-abstract method: 1) child class obj 2) using super
+
+Constructor doesn't have any return type explicitly. Implicitly, it has return type and it returns object of the class.
+If we add return type explicitly, it will become method.
 
