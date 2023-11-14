@@ -66,3 +66,11 @@ Two ways to access abstract class non-abstract method: 1) child class obj 2) usi
 Constructor doesn't have any return type explicitly. Implicitly, it has return type and it returns object of the class.
 If we add return type explicitly, it will become method.
 
+this and super can't be used in static method.
+this keyword is activated as soon as the current class object is created
+super keyword is activated as soon as the child class object is created
+Whenever child object is created, parent constructor will be called because child constructor will contain super() as first line.
+
+
+Whenever an exception occurs, the object of the exception class is thrown and that can be caught in catch block using that thrown object
+
