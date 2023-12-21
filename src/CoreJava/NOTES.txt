@@ -74,3 +74,23 @@ Whenever child object is created, parent constructor will be called because chil
 
 Whenever an exception occurs, the object of the exception class is thrown and that can be caught in catch block using that thrown object
 
+=========================================
+File operations
+---------------
+Creation of a new file
+Opening an existing file
+Reading from file
+Writing to a file
+Closing a file
+deleting a file
+
+Java classes
+------------
+FileReader, BufferedReader, Files, Scanner, FileInputStream, FileWriter, BufferedWriter,
+FileOutputStream, etc.
+
+- Create file
+- read file properties
+- read and write file using FileReader and FileWriter
+- read and write file using FileInputStream and FileOutputStream
+- use relative file path (File seperator)
